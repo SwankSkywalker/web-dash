@@ -1,0 +1,35 @@
+    
+
+
+body {
+    min-height: 100vh;
+    background-color: rgba(231, 227, 227, 0.518);
+    display: grid;
+    grid-template: auto 4fr / 1fr 4fr;
+}
+
+
+.header {
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    padding: 0.5rem 2rem;
+
+}
+
+.search {
+    grid-area: 1/1/2/2;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sidebar {
+    grid-column: 1;
+    display: grid;
+}
+
+.main-content {
+    display: grid;
+    grid-column: 2 / 3;
+}
